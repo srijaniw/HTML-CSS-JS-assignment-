@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ 
+
+  <script src="facebook.js">
+      
+    </script>
+</head>
+ 
+<body>
+    <div id=mail></div>
+    <div id=pas></div>
+</body>
+<script>
+   
+          var url_string = window.location.href;
+            var url = new URL(url_string);
+            var ema = url.searchParams.get("email");
+            console.log(ema);
+            
+            // var us = JSON.parse(localStorage.getItem('user'));
+             document.getElementById("mail").innerHTML = "Email : " + ema;
+            // console.log(us);
+           
+  </script>
+</html>

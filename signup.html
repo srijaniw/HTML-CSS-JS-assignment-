@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Form Input Validation Using JavaScript</title>
+  <script src="facebook.js">
+      
+  </script>
+</head>
+ 
+<body>
+   <div id="fn"></div>
+   <div id="ln"></div>
+   <div id="em"></div>
+   <div id="pa"></div>
+   <div id="m"></div>
+   <div id="y"></div>
+   <div id="d"></div>
+   <div id="gen"></div>
+</body>
+<script>
+   
+ 
+   var u = JSON.parse(localStorage.getItem('values'));
+            document.getElementById("fn").innerHTML = "Fname : " + u.Fname;
+            document.getElementById("ln").innerHTML = "Lname : " + u.Lname;
+            document.getElementById("em").innerHTML = "Email : " + u.Email;
+            document.getElementById("pa").innerHTML = "Password : " + u.Password;
+            document.getElementById("gen").innerHTML = "Gender : " + u.Gender;
+            document.getElementById("m").innerHTML = "Month : " + u.Month;
+            document.getElementById("y").innerHTML = "Year : " + u.Year;
+            document.getElementById("d").innerHTML = "Day : " + u.Day;
+            localStorage.clear();
+          localStorage.removeItem('values');
+ 
+  </script>
+</html>
